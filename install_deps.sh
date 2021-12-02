@@ -32,7 +32,7 @@ cd $DEP_INSTALL_DIR
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 if ! [ -x "$(command -v autoreconf)" ]; then
-        apt-get install autoconf
+        apt-get install autoconf -y
         fi
         ICU_CONFIG="Linux"
         LIB_INSTALL="linux"
